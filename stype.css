@@ -53,7 +53,7 @@ header{
 header .logo{
     position: relative;
     font-size: 2.5em;
-    color: #8a2435;
+    color: #BA1200;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
@@ -70,7 +70,7 @@ header .nav li{
 }
 
 header .nav li a{
-    color: #8a2435;
+    color: #BA1200;
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 25px;
@@ -84,7 +84,7 @@ header .nav li a:hover{
 }
 
 header .btn{
-    background: #8a2435;
+    background: #BA1200;
     color: #fff;
     text-decoration: none;
     padding: 8px 15px;
@@ -115,6 +115,11 @@ header .btn:hover{
     margin: 10px;
 }
 
+.content .contentBx h1 b{
+    font-size: 110px;
+    color: #BA1200;
+}
+
 .content .contentBx p{
     font-size: 1em;
     color: #000;
@@ -122,7 +127,7 @@ header .btn:hover{
 }
 
 .content .contentBx .btn{
-    background: #8a2435;
+    background: #BA1200;
     color: #fff;
     text-decoration: none;
     padding: 8px 15px;
@@ -134,7 +139,7 @@ header .btn:hover{
 
 .content .contentBx .btn:hover{
     background: #fff;
-    color: #8a2435;
+    color: #BA1200;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -154,7 +159,7 @@ header .btn:hover{
 
 .infoBx .box i{
     font-size: 1.6em;
-    color: #8a2435;
+    color: #BA1200;
     margin: 10px;
 }
 
