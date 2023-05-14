@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Spartan:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Spartan', sans-serif;
 }
 
 
@@ -33,12 +34,12 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
-    background-color: rgba(240, 226, 231, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
 header .logo{
@@ -50,29 +51,48 @@ header .logo{
     text-decoration: none;
 }
 
-header .nav{
-    position: relative;
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+header .navbar{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header .nav li{
+header .navbar li{
     list-style: none;
-    margin: 0 10px;
+    padding: 0 20px;
+    position: relative;
 }
 
-header .nav li a{
+header .navbar li a{
     color: #BA1200;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 25px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     transition: 0.5s;
 }
 
-header .nav li a:hover{
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+header .navbar li a:hover,
+header .navbar li a.active{
+    color: #000000;
 }
+
+
+header .navbar li a:hover::after,
+header .navbar li a.active::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -4px;
+    left: 20px ;
+}
+
 
 header .btn{
     background: #BA1200;
@@ -105,6 +125,7 @@ header .btn:hover{
     color: #000;
     line-height: 1em;
     margin: 10px;
+    display: flex;
 }
 
 .content .contentBx h1 b{
@@ -312,4 +333,129 @@ header .btn:hover{
 
 .footer p{
     padding-bottom: 15px;
+}
+
+
+.containerLogin{
+    background: #EEEEFF;
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 darkgray;
+}
+
+.containerLogin form{
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+
+.containerLogin .btnForm{
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #BA1200;
+}
+
+.btnForm button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+    font-size: 11px;
+}
+
+.btnForm .btnColor{
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #ba130043, #ba130082);
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.containerLogin input[type=text],
+.containerLogin input[type=password]{
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 90%;
+}
+
+.containerLogin button[type=submit]{
+    background: linear-gradient(to right, #ba1300a7, #ba1300);
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.check{
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+}
+
+#signin{
+    left: 25px;
+}
+
+#signup{
+    left: 450px;
+}
+
+#signin i,
+#signup i{
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+.iEmail{
+    top: 37px;
+}
+
+.iPassword1{
+    top: 106px;
+}
+
+.iPassword2{
+    top: 175px;
+}
+
+.containerLogin::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(45deg, #f7fcca9d, rgba(255, 192, 203, 0.374));
+}
+
+.blur_Login{
+    position: absolute;
+    background: #eeeeffe0;
+    width: 1800px;
+    height: 1800px;
+    border-radius: 50%;
+    bottom: 150px;
+    left: -850px;
+    z-index: -111;
 }
