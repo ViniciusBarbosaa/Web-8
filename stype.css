@@ -235,7 +235,7 @@ header .btn:hover{
     border-bottom: #0000001a solid 0.1px;
 }
 
-.search-bar form button{
+.search-bar form #pesquesa{
     background: #BA1200;
     width: 55px;
     height: 55px;
@@ -246,22 +246,23 @@ header .btn:hover{
     transition: 0.2s;
 }
 
-.search-bar form button:hover{
+.search-bar form #pesquesa:hover{
     background: #fff;
     color: #BA1200;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border: #BA1200 solid 0.3px;
 }
 
-.search-bar form button:hover i{
+.search-bar form #pesquesa:hover i{
     color: #BA1200;
 }
 
-.search-bar form button i{
+.search-bar form #pesquesa i{
     width: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
-    margin-top: 4px;
+    margin-top: 30%;
+    margin-left: 25%;
 }
 
 .location-input{
@@ -459,3 +460,93 @@ header .btn:hover{
     left: -850px;
     z-index: -111;
 }
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-height: 250;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    margin: 15px 0;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #BA1200;
+}
+
+#product1 .pro #carte{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #BA1200;
+    font-weight: 800;
+    color: white;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    transition: 0.2s;
+}
+
+#product1 .pro #carte:hover{
+    background: #fff;
+    color: #BA1200;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: #BA1200 solid 0.3px;
+}
+
+
+
