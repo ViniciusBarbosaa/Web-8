@@ -470,18 +470,18 @@ header .btn:hover{
 }
 
 #product1 .pro-container{
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 20px;
-    flex-wrap: wrap;
 }
 
 #product1 .pro{
-    width: 23%;
+    width: 85%;
     min-height: 250;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
-    border-radius: 25px;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
     margin: 15px 0;
@@ -576,10 +576,10 @@ header .btn:hover{
 }
 
 .menu .nav-pills .nav-link.active {
-    background-color: #F58d17;
+    background-color: #BA1200;
     color: #ffffff;
 } 
 
 .menu-item .stars {
-    color: #F58d17;
+    color: #BA1200;
 }
