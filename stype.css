@@ -44,16 +44,18 @@ header{
 
 header .logo{
     position: relative;
-    font-size: 2.5em;
+    font-size: 2.0em;
     color: #BA1200;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
 }
 
 header img{
-    width: 100px;
-    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90px;
+    height: auto;
 }
 
 header .navbar{
@@ -671,14 +673,15 @@ header .logo_produto img{
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 20px;
+    max-width: 100%;
     bottom: 20px;
-    width: 80%;
+    width: 100%;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 #product1 .select_pro{
-    width: 55%;
+    width: 65%;
     min-height: 250;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
@@ -691,61 +694,8 @@ header .logo_produto img{
 }
 
 .star_select{
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     color: rgb(255, 234, 0);
-    padding-top: 50%;
-    
-}
-
-#product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
-}
-
-#product1 .pro img{
-    width: 100%;
-    border-radius: 20px;
-}
-
-#product1 .pro .des{
-    text-align: start;
-    padding: 10px 0;
-}
-
-#product1 .pro .des span{
-    color: #606063;
-    font-size: 12px;
-}
-
-#product1 .pro .des h5{
-    padding-top: 7px;
-    color: #1a1a1a;
-    font-size: 14px;
-}
-
-#product1 .pro .des i{
-    font-size: 12px;
-    color: rgb(243, 181, 25);
-}
-
-#product1 .pro .des h4{
-    padding-top: 7px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #BA1200;
-}
-
-#product1 .pro #carte{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50px;
-    background-color: #BA1200;
-    font-weight: 800;
-    color: white;
-    border: 1px solid #cce7d0;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    transition: 0.2s;
+    padding-top: 40%;    
 }
